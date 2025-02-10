@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heloisa Ruth Frugoli Verde - Psicologia e Psicopedagogia</title>
+
+    <!-- Fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* RESET BÁSICO */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fff;
+        color: #333;
+      }
+
+      /* ESTILOS DO CABEÇALHO */
+      header {
+        background: linear-gradient(270deg, #c48b9f 0%, #fce4ec 100%);
+        padding: 1rem;
+      }
+
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #4a148c;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+      }
+
+      nav ul li a {
+        color: #4a148c;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: background 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #f8bbd0;
+        color: #4a148c;
+      }
+
+      /* HERO (BANNER PRINCIPAL) */
+      .hero {
+        background: linear-gradient(180deg, #fce4ec 40%, #ffffff 100%);
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 800px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+        color: #4a148c;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+
+      .btn-hero {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background-color: #4a148c;
+        color: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s;
+      }
+
+      .btn-hero:hover {
+        background-color: #6a1b9a;
+      }
+
+      /* SEÇÃO SOBRE */
+      section {
+        padding: 3rem 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #4a148c;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+
+      .sobre-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .sobre-text {
+        flex: 1 1 400px;
+        min-width: 280px;
+      }
+
+      .sobre-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .sobre-image {
+        flex: 1 1 400px;
+        min-width: 280px;
+        text-align: center;
+      }
+
+      .sobre-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* SEÇÃO SERVIÇOS */
+      .servicos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .card-servico {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card-servico:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-servico h3 {
+        font-size: 1.2rem;
+        color: #4a148c;
+        margin-bottom: 1rem;
+      }
+
+      .card-servico p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      /* SEÇÃO CONVÊNIOS */
+      .convenios-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .convenios-container img {
+        width: 150px;
+        border-radius: 5px;
+      }
+
+      /* SEÇÃO DEPOIMENTOS */
+      .depoimentos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      blockquote {
+        background: #f9f0ff;
+        border-left: 5px solid #6a1b9a;
+        padding: 1rem;
+        max-width: 600px;
+        font-style: italic;
+        color: #6a1b9a;
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+
+      blockquote footer {
+        text-align: right;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #333;
+      }
+
+      /* SEÇÃO CONTATO */
+      .contato {
+        text-align: center;
+      }
+
+      .contato p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      .contato ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .contato ul li a {
+        color: #4a148c;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid #4a148c;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s;
+      }
+
+      .contato ul li a:hover {
+        background: #4a148c;
+        color: #fff;
+      }
+
+      /* RODAPÉ */
+      footer {
+        background: #4a148c;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      /* RESPONSIVIDADE */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="logo">Heloisa R. F. Verde</div>
+        <nav>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#convenios">Convênios</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Ciclos de Transformação e Bem-Estar</h1>
+        <p>
+          Atendimentos presenciais no Tatuapé (próximo ao metrô Carrão e ao
+          Hospital e Maternidade São Luiz Anália Franco) e online para todo o
+          Brasil.
+        </p>
+        <a href="#contato" class="btn-hero">Agende sua Consulta</a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="sobre-container">
+        <div class="sobre-text">
+          <p>
+            Meu nome é <strong>Heloisa Ruth Frugoli Verde</strong>, sou
+            Psicóloga e Psicopedagoga com mais de 30 anos de experiência.
+            Durante esse tempo, ajudei milhares de pacientes e famílias a
+            superarem desafios emocionais e cognitivos por meio de um
+            acompanhamento personalizado e acolhedor.
+          </p>
+          <p>
+            Minha atuação é pautada em técnicas terapêuticas baseadas em
+            evidências, especialmente na <em>Terapia Cognitivo-Comportamental</em> e
+            em abordagens psicopedagógicas que auxiliam no desenvolvimento e
+            fortalecimento de habilidades e competências.
+          </p>
+          <p>
+            Acredito que cada pessoa passa por ciclos de transformação ao
+            longo da vida. Minha missão é acompanhar você em cada etapa,
+            auxiliando na construção de um caminho mais saudável, equilibrado
+            e repleto de bem-estar.
+          </p>
+        </div>
+        <div class="sobre-image">
+          <img
+            src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
+            alt="Foto da Dra. Heloisa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos">
+      <h2 class="section-title">Serviços</h2>
+      <div class="servicos-grid">
+        <div class="card-servico">
+          <h3>Psicologia para Adultos</h3>
+          <p>
+            Atendimento individual para adultos que buscam superar questões
+            como ansiedade, depressão, estresse, entre outras demandas
+            emocionais.
+          </p>
+        </div>
+        <div class="card-servico">
+          <h3>Psicopedagogia</h3>
+          <p>
+            Abordagens específicas para crianças e adolescentes com
+            dificuldades de aprendizagem, auxiliando no desenvolvimento
+            cognitivo e emocional.
+          </p>
+        </div>
+        <div class="card-servico">
+          <h3>Terapia de Casal e Familiar</h3>
+          <p>
+            Espaço de acolhimento para casais e famílias que desejam melhorar
+            a comunicação, superar conflitos e fortalecer vínculos.
+          </p>
+        </div>
+        <div class="card-servico">
+          <h3>Orientação Profissional</h3>
+          <p>
+            Aconselhamento voltado à escolha ou transição de carreira, bem
+            como ao desenvolvimento de habilidades sócio-emocionais.
+          </p>
+        </div>
+        <div class="card-servico">
+          <h3>Atendimento Online</h3>
+          <p>
+            Possibilidade de realizar sessões virtualmente, mantendo a mesma
+            qualidade do atendimento presencial, mas com maior comodidade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONVÊNIOS -->
+    <section id="convenios">
+      <h2 class="section-title">Convênios Atendidos</h2>
+      <p style="text-align:center;">
+        Atendemos os seguintes convênios (exemplos):
+      </p>
+      <div class="convenios-container">
+        <img src="banco-imagens/conv1.png" alt="Convênio 1" />
+        <img src="banco-imagens/conv2.png" alt="Convênio 2" />
+        <img src="banco-imagens/conv3.png" alt="Convênio 3" />
+      </div>
+    </section>
+
+    <!-- SEÇÃO DEPOIMENTOS -->
+    <section id="depoimentos">
+      <h2 class="section-title">O que dizem meus pacientes</h2>
+      <div class="depoimentos">
+        <blockquote>
+          “A Dra. Heloisa me ajudou a encontrar ferramentas para lidar com minha
+          ansiedade. Seu acolhimento fez toda a diferença.”
+          <footer>— João M.</footer>
+        </blockquote>
+        <blockquote>
+          “Meu filho apresentava muitas dificuldades na escola, mas após a
+          psicopedagogia, seu desempenho melhorou muito.”
+          <footer>— Ana P.</footer>
+        </blockquote>
+        <blockquote>
+          “A terapia de casal foi fundamental para restabelecer o diálogo e a
+          harmonia em nossa família. Recomendo!”
+          <footer>— Roberto e Clara</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+      <h2 class="section-title">Contato</h2>
+      <div class="contato">
+        <p>
+          Quer marcar uma sessão ou tirar alguma dúvida? Fique à vontade para
+          falar comigo através do WhatsApp ou das redes sociais:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://wa.me/5511993199499"
+              target="_blank"
+              rel="noopener noreferrer"
+            >WhatsApp</a>
+          </li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+        <p>
+          <strong>Endereço:</strong> Rua Fictícia, 123, Tatuapé, São Paulo - SP<br />
+          <strong>Atendimento:</strong> Presencial e online.
+        </p>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>© 2025 Heloisa Ruth Frugoli Verde - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
