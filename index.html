@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -26,7 +26,7 @@
       }
 
       body {
-        font-family: "Nunito", sans-serif;
+        font-family: "Inter", sans-serif;
         background-color: #ffffff;
         color: #333;
         line-height: 1.6;
@@ -41,6 +41,7 @@
       .header-container {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,6 +57,17 @@
         list-style: none;
         display: flex;
         gap: 1rem;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      .menu-icon {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #423b66;
       }
 
       nav ul li a {
@@ -98,6 +110,14 @@
         line-height: 1.6;
         color: #555;
         margin-bottom: 1.5rem;
+      }
+
+      .hero img {
+        display: block;
+        margin: 1rem auto;
+        max-width: 300px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
 
       .btn-hero {
@@ -232,7 +252,8 @@
         text-align: right;
         margin-top: 0.5rem;
         font-size: 0.9rem;
-        color: #333;
+        color: #ffffff;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
       }
 
       /* SEÇÃO CONTATO */
@@ -283,6 +304,25 @@
 
       /* RESPONSIVIDADE */
       @media (max-width: 768px) {
+        .menu-icon {
+          display: block;
+        }
+
+        nav ul {
+          display: none;
+          flex-direction: column;
+          background: #ffffff;
+          width: 100%;
+          margin-top: 1rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #menu-toggle:checked + .menu-icon + nav ul {
+          display: flex;
+          padding: 1rem 0;
+        }
+
         .hero h1 {
           font-size: 1.8rem;
         }
@@ -298,6 +338,8 @@
     <header>
       <div class="header-container">
         <div class="logo">Heloisa R. F. Verde</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
           <ul>
             <li><a href="#hero">Início</a></li>
@@ -315,7 +357,7 @@
     <section class="hero" id="hero">
       <div class="hero-content">
         <h1>Ciclos de Transformação e Bem-Estar</h1>
-        <img src="Heloisa-Foto.jpg" alt="Foto da Heloisa" style="display:block; margin: 1rem auto; max-width:300px; border-radius:16px; box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);" />
+        <img src="Heloisa-Foto.jpg" alt="Foto da Heloisa" />
         <p>
           Atendimento humanizado e ético com mais de 30 anos de experiência.
           Presencial no Tatuapé e online para todo o Brasil e brasileiros que
@@ -345,7 +387,7 @@
         </div>
         <div class="sobre-image">
           <img
-            src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"
+            src="Heloisa-Foto.jpg"
             alt="Foto da Dra. Heloisa"
           />
         </div>
@@ -357,7 +399,7 @@
       <h2 class="section-title">Serviços</h2>
       <div class="servicos-grid">
         <div class="card-servico">
-          <img src="https://images.unsplash.com/photo-1520974735194-6a83156b7aa1?auto=format&fit=crop&w=400&q=60" alt="Atendimento adulto" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
+          <img src="imagens/psicologia-adultos.svg" alt="Atendimento adulto" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Psicologia para Adultos</h3>
           <p>
             Atendimento individual para adultos que buscam superar questões
@@ -366,7 +408,7 @@
           </p>
         </div>
         <div class="card-servico">
-          <img src="https://images.unsplash.com/photo-1584697964289-f596af1fe5c2?auto=format&fit=crop&w=400&q=60" alt="Psicopedagogia" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
+          <img src="imagens/psicopedagogia.svg" alt="Psicopedagogia" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Psicopedagogia</h3>
           <p>
             Abordagens específicas para crianças e adolescentes com
@@ -375,7 +417,7 @@
           </p>
         </div>
         <div class="card-servico">
-          <img src="https://images.unsplash.com/photo-1601023356763-4ec7cce0040c?auto=format&fit=crop&w=400&q=60" alt="Terapia de casal" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
+          <img src="imagens/terapia-casal.svg" alt="Terapia de casal" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Terapia de Casal e Familiar</h3>
           <p>
             Espaço de acolhimento para casais e famílias que desejam melhorar
@@ -383,7 +425,7 @@
           </p>
         </div>
         <div class="card-servico">
-          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=60" alt="Orientação profissional" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
+          <img src="imagens/orientacao-profissional.svg" alt="Orientação profissional" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Orientação Profissional</h3>
           <p>
             Aconselhamento voltado à escolha ou transição de carreira, bem
@@ -391,7 +433,7 @@
           </p>
         </div>
         <div class="card-servico">
-          <img src="https://images.unsplash.com/photo-1587502536263-3e06c61cc137?auto=format&fit=crop&w=400&q=60" alt="Atendimento online" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
+          <img src="imagens/atendimento-online.svg" alt="Atendimento online" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Atendimento Online</h3>
           <p>
             Possibilidade de realizar sessões virtualmente, mantendo a mesma
@@ -452,7 +494,13 @@
               rel="noopener noreferrer"
             >WhatsApp</a>
           </li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/insta.heloisapsico"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Instagram</a>
+          </li>
         </ul>
         <p>
           <strong>Endereço:</strong> Próximo ao Hospital e Maternidade São Luiz
@@ -465,7 +513,10 @@
 
     <!-- RODAPÉ -->
     <footer>
-      <p>© 2025 Heloisa Ruth Frugoli Verde - Todos os direitos reservados</p>
+      <p>
+        © 2025 Heloisa Ruth Frugoli Verde - Todos os direitos reservados |
+        <a href="https://www.instagram.com/insta.heloisapsico" target="_blank" style="color:#fff;">Instagram</a>
+      </p>
     </footer>
   </body>
 </html>
