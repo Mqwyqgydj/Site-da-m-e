@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="gradCasal" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d9f0e4" />
+      <stop offset="100%" stop-color="#b7e2c9" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#gradCasal)" />
+  <path d="M120 120c0-22 18-40 40-40s40 18 40 40c0 40-40 60-40 60s-40-20-40-60z" fill="#fff"/>
+  <path d="M200 120c0-22 18-40 40-40s40 18 40 40c0 40-40 60-40 60s-40-20-40-60z" fill="#fff"/>
+  <text x="200" y="235" font-family="Arial" font-size="30" fill="#423b66" text-anchor="middle">Casal/Família</text>
+</svg>
