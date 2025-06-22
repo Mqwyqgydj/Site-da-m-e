@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -26,15 +26,16 @@
       }
 
       body {
-        font-family: "Poppins", sans-serif;
-        background-color: #fff;
+        font-family: "Nunito", sans-serif;
+        background-color: #ffffff;
         color: #333;
+        line-height: 1.6;
       }
 
       /* ESTILOS DO CABEÇALHO */
       header {
-        background: linear-gradient(270deg, #c48b9f 0%, #fce4ec 100%);
-        padding: 1rem;
+        background: linear-gradient(90deg, #b7d3f2 0%, #d8c7e4 100%);
+        padding: 1rem 0;
       }
 
       .header-container {
@@ -46,9 +47,9 @@
       }
 
       .logo {
-        font-weight: 600;
-        font-size: 1.5rem;
-        color: #4a148c;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #423b66;
       }
 
       nav ul {
@@ -58,7 +59,7 @@
       }
 
       nav ul li a {
-        color: #4a148c;
+        color: #423b66;
         text-decoration: none;
         font-weight: 600;
         padding: 0.5rem 1rem;
@@ -67,13 +68,13 @@
       }
 
       nav ul li a:hover {
-        background-color: #f8bbd0;
-        color: #4a148c;
+        background-color: #cbe4f9;
+        color: #423b66;
       }
 
       /* HERO (BANNER PRINCIPAL) */
       .hero {
-        background: linear-gradient(180deg, #fce4ec 40%, #ffffff 100%);
+        background: linear-gradient(180deg, #e6f2ff 40%, #ffffff 100%);
         min-height: 60vh;
         display: flex;
         align-items: center;
@@ -88,13 +89,13 @@
 
       .hero h1 {
         font-size: 2.2rem;
-        color: #4a148c;
+        color: #423b66;
         margin-bottom: 1rem;
       }
 
       .hero p {
         font-size: 1.1rem;
-        line-height: 1.5;
+        line-height: 1.6;
         color: #555;
         margin-bottom: 1.5rem;
       }
@@ -102,7 +103,7 @@
       .btn-hero {
         display: inline-block;
         padding: 0.75rem 2rem;
-        background-color: #4a148c;
+        background-color: #6f79a8;
         color: #fff;
         border-radius: 20px;
         text-decoration: none;
@@ -111,7 +112,7 @@
       }
 
       .btn-hero:hover {
-        background-color: #6a1b9a;
+        background-color: #48507a;
       }
 
       /* SEÇÃO SOBRE */
@@ -124,7 +125,7 @@
       .section-title {
         text-align: center;
         font-size: 2rem;
-        color: #4a148c;
+        color: #423b66;
         margin-bottom: 2rem;
         font-weight: 600;
       }
@@ -183,7 +184,7 @@
 
       .card-servico h3 {
         font-size: 1.2rem;
-        color: #4a148c;
+        color: #423b66;
         margin-bottom: 1rem;
       }
 
@@ -217,12 +218,12 @@
       }
 
       blockquote {
-        background: #f9f0ff;
-        border-left: 5px solid #6a1b9a;
+        background: #eef4fb;
+        border-left: 5px solid #6f79a8;
         padding: 1rem;
         max-width: 600px;
         font-style: italic;
-        color: #6a1b9a;
+        color: #6f79a8;
         font-size: 1rem;
         border-radius: 5px;
       }
@@ -253,23 +254,23 @@
       }
 
       .contato ul li a {
-        color: #4a148c;
+        color: #423b66;
         font-weight: 600;
         text-decoration: none;
-        border: 2px solid #4a148c;
+        border: 2px solid #423b66;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         transition: all 0.3s;
       }
 
       .contato ul li a:hover {
-        background: #4a148c;
+        background: #6f79a8;
         color: #fff;
       }
 
       /* RODAPÉ */
       footer {
-        background: #4a148c;
+        background: #423b66;
         color: #fff;
         text-align: center;
         padding: 1rem;
@@ -316,9 +317,9 @@
         <h1>Ciclos de Transformação e Bem-Estar</h1>
         <img src="Heloisa-Foto.jpg" alt="Foto da Heloisa" style="display:block; margin: 1rem auto; max-width:300px; border-radius:16px; box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);" />
         <p>
-          Atendimentos presenciais no Tatuapé (próximo ao metrô Carrão e ao
-          Hospital e Maternidade São Luiz Anália Franco) e online para todo o
-          Brasil.
+          Atendimento humanizado e ético com mais de 30 anos de experiência.
+          Presencial no Tatuapé e online para todo o Brasil e brasileiros que
+          vivem no exterior.
         </p>
         <a href="#contato" class="btn-hero">Agende sua Consulta</a>
       </div>
@@ -356,6 +357,7 @@
       <h2 class="section-title">Serviços</h2>
       <div class="servicos-grid">
         <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1520974735194-6a83156b7aa1?auto=format&fit=crop&w=400&q=60" alt="Atendimento adulto" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Psicologia para Adultos</h3>
           <p>
             Atendimento individual para adultos que buscam superar questões
@@ -364,6 +366,7 @@
           </p>
         </div>
         <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1584697964289-f596af1fe5c2?auto=format&fit=crop&w=400&q=60" alt="Psicopedagogia" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Psicopedagogia</h3>
           <p>
             Abordagens específicas para crianças e adolescentes com
@@ -372,6 +375,7 @@
           </p>
         </div>
         <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1601023356763-4ec7cce0040c?auto=format&fit=crop&w=400&q=60" alt="Terapia de casal" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Terapia de Casal e Familiar</h3>
           <p>
             Espaço de acolhimento para casais e famílias que desejam melhorar
@@ -379,6 +383,7 @@
           </p>
         </div>
         <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=60" alt="Orientação profissional" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Orientação Profissional</h3>
           <p>
             Aconselhamento voltado à escolha ou transição de carreira, bem
@@ -386,6 +391,7 @@
           </p>
         </div>
         <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1587502536263-3e06c61cc137?auto=format&fit=crop&w=400&q=60" alt="Atendimento online" style="width:100%;border-radius:8px;margin-bottom:1rem;" />
           <h3>Atendimento Online</h3>
           <p>
             Possibilidade de realizar sessões virtualmente, mantendo a mesma
@@ -402,9 +408,9 @@
         Atendemos os seguintes convênios (exemplos):
       </p>
       <div class="convenios-container">
-        <img src="banco-imagens/conv1.png" alt="Convênio 1" />
-        <img src="banco-imagens/conv2.png" alt="Convênio 2" />
-        <img src="banco-imagens/conv3.png" alt="Convênio 3" />
+        <img src="https://via.placeholder.com/150x80?text=Conv%C3%AAnio+1" alt="Convênio 1" />
+        <img src="https://via.placeholder.com/150x80?text=Conv%C3%AAnio+2" alt="Convênio 2" />
+        <img src="https://via.placeholder.com/150x80?text=Conv%C3%AAnio+3" alt="Convênio 3" />
       </div>
     </section>
 
@@ -447,11 +453,12 @@
             >WhatsApp</a>
           </li>
           <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
         <p>
-          <strong>Endereço:</strong> Rua Fictícia, 123, Tatuapé, São Paulo - SP<br />
-          <strong>Atendimento:</strong> Presencial e online.
+          <strong>Endereço:</strong> Próximo ao Hospital e Maternidade São Luiz
+          Anália Franco — para maiores informações, entre em contato por
+          WhatsApp.
+          <br /><strong>Atendimento:</strong> Presencial e online.
         </p>
       </div>
     </section>
