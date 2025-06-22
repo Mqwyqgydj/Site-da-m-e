@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="gradTDAH" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e8e8ff" />
+      <stop offset="100%" stop-color="#c6c6f8" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#gradTDAH)" />
+  <rect x="100" y="60" width="200" height="130" rx="10" fill="#fff" stroke="#423b66" stroke-width="3" />
+  <text x="200" y="235" font-family="Arial" font-size="26" fill="#423b66" text-anchor="middle">TDAH</text>
+</svg>
