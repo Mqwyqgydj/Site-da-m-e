@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="gradBariatrica" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffe9d6" />
+      <stop offset="100%" stop-color="#f9c7b8" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#gradBariatrica)" />
+  <circle cx="200" cy="125" r="60" fill="#fff" stroke="#423b66" stroke-width="3" />
+  <text x="200" y="235" font-family="Arial" font-size="28" fill="#423b66" text-anchor="middle">Bariátrica</text>
+</svg>
